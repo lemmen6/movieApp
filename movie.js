@@ -72,5 +72,7 @@ form.addEventListener('submit', (e) => {
 
     if(searchTerm) {
         getMovies(searchURL + '&query=' + searchTerm);
+    } else {
+        getMovies(API_URL);
     }
 })
